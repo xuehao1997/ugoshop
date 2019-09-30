@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>惠买首页</title>
+	<link rel="icon" href="../img/goodslogo.jpg" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/huimai.css">
+	<link rel="stylesheet" href="css/list.css">
+</head>
+
+<body>
+	<div class="top-nav borbot">
+		<div class="webz clearfix">
+			<!--公告-->
+			<div class="notice_scroll" style="">
+				<span>公告：</span>
+				<ul class="show_notice" style="margin-top: 0px;">
+					<li><a href="http://www.ugoshop.com/article-11316.html" target="_blank">【公告】防诈骗提醒</a></li>
+					<li><a href="http://www.ugoshop.com/article-8162.html" target="_blank">【紧急通知】关于短信发送异常的公告</a></li>
+					<li><a href="http://www.ugoshop.com/article-7777.html" target="_blank">惠买（优购物）5周年庆，盛大聚“惠”</a></li>
+					<li><a href="http://www.ugoshop.com/article-7691.html" target="_blank">【注意】自主语音订购说明</a></li>
+				</ul>
+				<!-- <script>
+                  $(document).ready(function(){
+                      if(document.domain == 'www.ugoshop.com'){
+                          $.ajax({
+                              url: "/flow/goods/GetNotice",
+                              type: "GET",
+                              dataType: "html",
+                              success: function(data) {
+                                if(data){
+                                  $(".show_notice").html(data);
+                                  $(".notice_scroll").show();
+                                }
+                              }
+                          });
+                      }else{
+                          $(".notice_scroll").hide();
+                      }
+                  });
+                  </script> -->
+			</div>
+			<!--公告/-->
+			<ul class="top-nav-tool clearfix" name="ajax_head" id="ajax_head">
+				<!-- 注册页面跳转 -->
+				<li class="yg-card"><span><a target="_blank" href="register.html"
+							id="__AD_head_zhuce" rel="nofollow">注册</a> </span>|</li>
+							<!-- 登录页面跳转 -->
+				<li class="yg-card"><span><a target="_blank"
+							href="login.html"
+							id="__AD_head_denglu" rel="nofollow">登录</a> </span>|</li>
+				<li class="yg-card"><span><a target="_blank" href="http://10.31.162.34/atfullsplit/ugoshop/src/shopcar.html"
+							id="__AD_head_dingdan" rel="nofollow">我的订单</a> </span>|</li>
+				<li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/user.php?act=collection_list"
+							id="__AD_head_guanzhu" rel="nofollow">我的关注</a> </span>|</li>
+				<li class="yg-card"><span><a target="_blank" href="http://info.ugoshop.com/" id="__AD_head_zixun">资讯</a>
+					</span>|</li>
+				<li class="yg-card"><span><a target="_blank" href="http://www.ugoshop.com/brand_cate.php"
+							id="__AD_head_pinpai">品牌馆</a> </span>|</li>
+				<li class="dh" id="wzdh"></li>
+				<li class="yg-phone"><span class="phone_in"><a href="javascript:void(0);" id="_AD_head_app" class=""><i
+								class="t"><img
+									src="https://www.ugoshop.com/themes/ugo/images/2015/2015_public/phone.png" width="9"
+									height="12" alt="手机惠买" title="惠买手机客户端二维码"></i>手机惠买</a> </span>
+					<div class="down_app" style="display: none;"> <i class="t"></i>
+						<div class="app_erm"> <a href="javascript:void(0);"><img alt="" title=""
+									src="https://www.ugoshop.com/themes/ugo/images/2015/2015_public/ewm90X90.jpg"
+									width="90" height="90"></a>
+							<p><a href="javascript:void(0);">扫一扫哦~</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- logo图搜索框 -->
+	<div class="header_logo webz clearfix">
+		<div class="lbox l">
+			<h2 class="logo" id="_AD_head_logo"><a href="https://www.ugoshop.com"><img alt="惠买" title="惠买"
+						src="https://www.ugoshop.com/themes/ugo/images/2015/2015_public/logo.png">
+					<i class="logo_layer"></i>
+				</a>
+			</h2>
+
+		</div>
+		<div class="search l" id="__AD_head_search_icon">
+			<div class="sch clearfix">
+				<form target="_blank" method="get" action="/search.php" name="keyform">
+					<div class="l">
+						<input type="text" class="sch_in" id="sch_in" name="keywords" value="惠人原汁机"
+							onfocus="if(this.value!=''){this.value=''};"
+							onblur="if(this.value==''||this.value=='请输入商品名称或货号'){this.value='请输入商品名称或货号';}">
+					</div>
+
+					<div class="r">
+						<input type="button" class="sch_btn" onclick="document.keyform.submit()" value="搜索">
+					</div>
+				</form>
+				<!--历史记录-->
+				<ul class="lenov-words history" style="display:none;">
+				</ul>
+				<!--搜索联想词-->
+				<ul class="lenov-words lenov" id="search_words" style="display:none;">
+				</ul>
+			</div>
+			<input type="hidden" value="" id="key_words_inp">
+			<input type="hidden" value="" id="key_searchd">
+			<div class="gjc" id="__AD_head_search_keyword_recom">
+				<span class="gjc_tip" id="search_index"></span>
+			</div>
+		</div>
+
+		<div class="samllad l" id="__AD_head_search_right_ad">
+		</div>
+
+		<div class="r"><img src="http://img.ugoshop.com/mobile/EC/images/pt/top-app-download.png" alt=""></div>
+	</div>
+
+
+
+	<!-- 导航 -->
+	<div class="main-nav">
+		<div class="webz">
+			<ul class="navul clearfix">
+				<li class="channel" id="__AD_head__mainmenu_1"><a target="_self" href="https://www.ugoshop.com"
+						class="hover">首页</a></li>
+				<li class="channel" id="__AD_head__mainmenu_7"><a target="_self" href="https://www.ugoshop.com/tvList/"
+						class="a-tvicon">视频</a></li>
+				<li class="channel" id="__AD_head__mainmenu_2"><a target="_self"
+						href="https://www.ugoshop.com/ch22/">品质厨房</a></li>
+				<li class="channel" id="__AD_head__mainmenu_3"><a target="_self"
+						href="https://www.ugoshop.com/ch92/">美食民生</a></li>
+				<li class="channel" id="__AD_head__mainmenu_4"><a target="_self"
+						href="https://www.ugoshop.com/ch1/">健康生活</a></li>
+				<li class="channel" id="__AD_head__mainmenu_5"><a target="_self"
+						href="https://www.ugoshop.com/ch257/">魅力穿戴</a></li>
+				<li class="channel" id="__AD_head__mainmenu_6"><a target="_self"
+						href="https://www.ugoshop.com/ch281/">珠宝收藏</a></li>
+				<li class="channel" id="__AD_head__mainmenu_9"><a target="_self"
+						href="https://www.ugoshop.com/ch58/">美肤靓装</a></li>
+
+				<!-- 二级导航-->
+				<li class="navcat">
+					<dl class="alnav l" id="all_fl">
+						<dt class="sysp">
+							<p class="">所有商品分类</p>
+						</dt>
+						<dd class="qb_fl clearfix" style="display: none;" caltag="3" clstag="99999|1|page_index_011">
+							<div class="fllist">
+								<div class="fllisttop clearfix">
+									<div class="kinds kindcf">
+										<div class="kindstop">
+											<div class="stat"><img width="30" height="42" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_03.png">
+											</div>
+											<div class="stat_hover"><img width="38" height="40" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_03.png">
+											</div>
+											<a target="_blank" href="https://www.ugoshop.com/ch22/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'22','Browse',null);"
+												id="__AD_shouye_daohang3_1">品质厨房</a>
+										</div>
+										<div class="kindsbot">
+											<a target="_blank" href="https://www.ugoshop.com/ch22-sub208/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'208','Browse',null);">烹饪厨具</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch22-sub403/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'403','Browse',null);">厨房电器</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch22-sub1265/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1265','Browse',null);">餐饮用具</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch22-sub207/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'207','Browse',null);">厨房配件</a>
+										</div>
+									</div>
+									<div class="kinds kindms">
+										<div class="kindstop">
+											<div class="stat"><img width="30" height="42" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_05.png">
+											</div>
+											<div class="stat_hover"><img width="38" height="40" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_05.png">
+											</div>
+											<a target="_blank" id="__AD_shouye_daohang3_2"
+												href="https://www.ugoshop.com/ch92/" data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'92','Browse',null);">美食•民生</a>
+										</div>
+										<div class="kindsbot">
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub93/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'93','Browse',null);">进口食品</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub829/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'829','Browse',null);">滋补养生</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub364/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'364','Browse',null);">休闲食品</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub959/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'959','Browse',null);">粮油干货</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub822/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'822','Browse',null);">酒水茶饮</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub1435/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1435','Browse',null);">跨境直邮</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub1429/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1429','Browse',null);">保健食品</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch92-sub1245/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1245','Browse',null);">生鲜食品</a>
+										</div>
+									</div>
+									<div class="kinds kindjk">
+										<div class="kindstop">
+											<div class="stat"><img width="30" height="42" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_07.png">
+											</div>
+											<div class="stat_hover"><img width="38" height="40" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_07.png">
+											</div>
+											<a target="_blank" id="__AD_shouye_daohang3_3"
+												href="https://www.ugoshop.com/ch1/" data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1','Browse',null);">健康生活</a>
+										</div>
+										<div class="kindsbot">
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub192/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'192','Browse',null);">优质睡眠</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub1057/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1057','Browse',null);">收纳用品</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub1305/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1305','Browse',null);">生活日用</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub1059/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1059','Browse',null);">生活小电</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub1121/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1121','Browse',null);">装饰/家具</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub952/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'952','Browse',null);">健身/户外</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch1-sub1424/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1424','Browse',null);">生活大电</a>
+										</div>
+									</div>
+									<div class="kinds  kindmlcd">
+										<div class="kindstop">
+											<div class="stat"><img width="30" height="42" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_09.png">
+											</div>
+											<div class="stat_hover"><img width="38" height="40" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_09.png">
+											</div>
+											<a target="_blank" id="__AD_shouye_daohang3_4"
+												href="https://www.ugoshop.com/ch257/" data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'257','Browse',null);">魅力穿戴</a>
+										</div>
+										<div class="kindsbot">
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub260/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'260','Browse',null);">女装</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub689/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'689','Browse',null);">男装</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub353/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'353','Browse',null);">内衣</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub1005/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1005','Browse',null);">箱包</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub638/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'638','Browse',null);">鞋靴</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub282/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'282','Browse',null);">配饰</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch257-sub1254/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1254','Browse',null);">户外鞋服</a>
+										</div>
+									</div>
+									<div class="kinds kindzb">
+										<div class="kindstop">
+											<div class="stat"><img width="30" height="42" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_13.png">
+											</div>
+											<div class="stat_hover"><img width="38" height="40" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_13.png">
+											</div>
+											<a target="_blank" id="__AD_shouye_daohang3_6"
+												href="https://www.ugoshop.com/ch281/" data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'281','Browse',null);">珠宝收藏</a>
+										</div>
+										<div class="kindsbot">
+											<a target="_blank" href="https://www.ugoshop.com/ch281-sub517/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'517','Browse',null);">翡翠玉石</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch281-sub680/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'680','Browse',null);">宝石珍珠</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch281-sub527/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'527','Browse',null);">水晶玛瑙</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch281-sub535/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'535','Browse',null);">时尚饰品</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch281-sub1053/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1053','Browse',null);">钟表</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch281-sub1025/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'1025','Browse',null);">文化收藏</a>
+										</div>
+									</div>
+									<div class="kinds kinds2 kindmf">
+										<div class="kindstop">
+											<div class="stat"><img width="30" height="42" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/newsix_11.png">
+											</div>
+											<div class="stat_hover"><img width="38" height="40" alt=""
+													src="https://www.ugoshop.com/themes/ugo/images/2013_v1/classify/qbdh/sixhover_11.png">
+											</div>
+											<a target="_blank" id="__AD_shouye_daohang3_5"
+												href="https://www.ugoshop.com/ch58/" data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'58','Browse',null);">美肤靓妆</a>
+										</div>
+										<div class="kindsbot">
+											<a target="_blank" href="https://www.ugoshop.com/ch58-sub247/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'247','Browse',null);">面部护理</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch58-sub170/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'170','Browse',null);">洗护护理</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch58-sub843/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'843','Browse',null);">美容仪器</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch58-sub972/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'972','Browse',null);">身体护理</a>
+											<a target="_blank" href="https://www.ugoshop.com/ch58-sub171/"
+												data-ref="null_categoryBrowse"
+												onclick="addTrackPositionToCookie(this,null,null,'171','Browse',null);">彩妆香水</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- 轮播图 -->
+	<div class="banner">
+		<!-- 左右两个小箭头 -->
+		<a href="javascript:;" id="next" style="display: block"></a>
+		<a href="javascript:;" id="prev" style="display: block"></a>
+
+		<div class="scroll">
+			<img src="../img/banner1.jpg" alt="banner1">
+			<img src="../img/banner2.jpg" alt="banner2">
+		</div>
+		<!-- 底部的两个小圆圈 -->
+		<div class="circle">
+			<a href="javascript:;" id="circle-one"></a>
+			<a href="javascript:;" id="circle-two"></a>
+		</div>
+	</div>
+	
+	<article>
+		<!-- tv直播栏目 -->
+		<div class="louceng">
+			<!-- TV字段 -->
+				<div class="hmyx tvtitle">
+						<i></i>
+						<span><i style="font-size: 26px;
+							color: #f70800;">TV</i>直播</span>
+							<a href="https://www.ugoshop.com/tvList/">
+									<img src="https://www.ugoshop.com/themes/ugo/images/2018-50/home/program_list_btn.png" alt="节目表">
+							</a>
+							
+				</div>
+				<!-- TV直播盒子 -->
+				<div class="box-biqiang">
+			
+						<div class="l box-slide box-showtv">
+							<div class="l box-img">
+								<!-- <img src="https://assets.ugoshop.com/proimage/da43492f1b3da9f11d2c20f1c48b1145.jpg!pimg" alt="衣服"> -->
+								<img src="" alt="" data-original="https://assets.ugoshop.com/proimage/da43492f1b3da9f11d2c20f1c48b1145.jpg!pimg">
+								<p>HE&LUNE魅力鎏彩修身连衣裙·蓝色</p>
+								<h1>￥527</h1>
+							</div>
+
+							<div class="l box-img">
+									<!-- <img src="https://assets.ugoshop.com/proimage/dd604a5a373e71888b6ff791b0179452.jpg!pimg" alt="衣服"> -->
+									<img src="" alt="" data-original="https://assets.ugoshop.com/proimage/dd604a5a373e71888b6ff791b0179452.jpg!pimg">
+									<p>GUCCI新款金丝双G提花方巾·紫色</p>
+									<h1>￥1860</h1>
+								</div>
+							<!-- 写两个箭头定位定到那里 -->
+							<p class="arrow-left"></p>
+							<p class="arrow-right"></p>
+						</div>
+					</div>
+		</div>
+
+		<!-- 今天必抢栏目 -->
+		<div class="goods-list louceng">
+			<!-- 今日必抢标题 -->
+				<div class="hmyx">
+						<i></i>
+						<span><i style="font-size: 26px;
+							color: #f70800;">今日</i>必抢</span>
+				</div>
+				<!-- 今日必抢盒子 -->
+				<div class="box-biqiang">
+					<!-- 每日一品盒子 -->
+					<div class="l decorate">
+						<div>
+								<!-- <img src="../img/smimg.jpg" alt="goods"> -->
+								<img alt="" data-original="../img/smimg.jpg">
+								<p>陕西大荔冬枣新鲜5斤家庭实惠装 （15-20g左右/单果）</p>
+								<span>￥49.00</span>
+						</div>
+						<img src="../img/shadow_right.png" alt="right deg" id="shadow-r">
+						<img src="../img/shadow_left.png" alt="left deg" id="shadow-l">
+						<h1 id="bg-reduce">
+							<div>
+								立减<br><span>50</span>元
+							</div>
+						</h1>
+					</div>
+					<!-- 有左右箭头的盒子 -->
+					<div class="l box-slide">
+						<div class="l box-img">
+							<!-- <img src="../img/listimg1.jpg" alt="goodimg""> -->
+							<img src="" alt="" data-original="../img/listimg1.jpg">
+							<p>日本Ahomii进口锂辉石砂锅3个规格可选</p>
+							<h1>￥99</h1>
+						</div>
+						<!-- 写两个箭头定位定到那里 -->
+						<p class="arrow-left"></p>
+						<p class="arrow-right"></p>
+					</div>
+
+				</div>
+		</div>
+		
+
+		<!-- 惠买优选标题 -->
+		<div class="louceng">
+				<div class="hmyx">
+						<i></i>
+						<span>惠买优选</span>
+				</div>
+				
+			<!-- 渲染li标签 -->
+			<div class="goods-list">
+				<ul class="clearfix">
+					<!-- <li>
+						<a href="javascript:;">
+							<img src="../img/li1.jpg" alt="商品列表">
+							<p>美国西屋营养萃取破壁机</p>
+							<em>全家营养一机搞定!</em>
+							<span>￥1860</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="../img/li2.jpg" alt="商品列表">
+							<p>描述</p>
+							<span>价格</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="../img/li3.jpg" alt="商品列表">
+							<p>描述</p>
+							<span>价格</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="../img/li4.jpg" alt="商品列表">
+							<p>描述</p>
+							<span>价格</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="../img/li5.jpg" alt="商品列表">
+							<p>描述</p>
+							<span>价格</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<img src="../img/li6.jpg" alt="商品列表">
+							<p>描述</p>
+							<span>价格</span>
+						</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+			
+	</article>
+
+
+
+	<!-- 页脚 -->
+	<div class="footer">
+			<div class="footad webz">
+			  <div class="webz"><img alt="" src="https://www.ugoshop.com/themes/ugo/images/2015/2015_public/footer_ad.jpg" width="1000" height="102"></div>
+			</div>    
+			  
+			<div class="webz">
+			  <div class="flist clearfix">
+				<dl class="flistdl">
+				  <dt>新手上路</dt>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-37.html">新用户注册</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-46.html">忘记密码</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-45.html">购物流程</a></dd>
+				</dl>
+				<dl class="flistdl">
+				  <dt>支付配送</dt>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-38.html">货到付款</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-49.html">支付宝</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-52.html">配送方式</a></dd>
+				</dl>
+				<dl class="flistdl">
+				  <dt>会员服务</dt>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-54.html">服务承诺</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-1379.html">会员制度</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-47.html">积分介绍</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/article-40.html">退换货原则</a></dd>
+				</dl>
+				<dl class="flistdl nob">
+				  <dt>关于惠买</dt>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/about_index.php">企业介绍</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/about_contact.php">联系我们</a></dd>
+				  <dd><a target="_blank" href="https://www.ugoshop.com/about_zhaoshang.php">招商专区</a></dd>
+				</dl>
+				<dl class="flistdl2 clearfix">
+				  <dt class="l"><a target="_blank" href="https://www.ugoshop.com/app/"><img alt="" src="/themes/ugo/images/2015/2015_public/foot_ewm.jpg" width="80" height="80"><i>手机惠买</i><em>（优购物）</em></a></dt>
+				  <dd class="l"><img alt="" src="/themes/ugo/images/2015/2015_public/foot_dh.jpg" width="149" height="38"></dd>
+				</dl>
+			  </div>
+			</div>
+			<div class="footerinfo webw">
+			  <p class="footer-list"><a target="_blank" href="https://www.ugoshop.com">首页</a> |
+			  <a target="_blank" href="https://www.ugoshop.com/about_index.php">关于惠买</a> |
+			  <a target="_blank" href="/about_index.php?company=ugo">优购物</a> |
+			  <a target="_blank" href="https://www.ugoshop.com/about_contact.php">联系我们</a> |
+			  <a target="_blank" href="https://www.ugoshop.com/about_join.php">招贤纳士</a> |
+			  <a target="_blank" href="https://www.ugoshop.com/about_zhaoshang.php">招商专区</a> |
+			  <a target="_blank" href="http://scm.17ugo.com/">供应商入口</a> | 
+			  <a target="_blank" href="https://www.ugoshop.com/link.php">友情链接</a> |
+			  <a target="_blank" href="https://www.ugoshop.com/sitemap.html">网站地图</a> |
+			  <a target="_blank" href="http://info.ugoshop.com/">资讯中心</a> | 
+			  <a target="_blank" href="https://www.ugoshop.com/review.html">评论</a> |
+			  <a target="_blank" href="https://www.ugoshop.com/photo.html"> 图片</a>
+			  </p>
+				  <div class="yqlink clearfix">
+		  <p class="dlphh l" id="friend_link"><em>友情链接：</em><a target="_blank" href="http://www.loho88.com/">配眼镜</a><a target="_blank" href="http://www.zocai.com/">佐卡伊珠宝网</a><a target="_blank" href="http://www.wbiao.cn/">腕表名表</a><a target="_blank" href="http://www.kaitao.cn/">如何开网店</a><a target="_blank" href="http://www.sodao.com">免费试用</a><a target="_blank" href="http://www.crd.cn/">钻戒网</a></p>
+				  <div class="r_button r">▼</div>
+			  </div>    
+			  <p class="copyright">优品_惠买（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品_惠买（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+			  <p class="copyright">Copyright©2007-2019 &nbsp;  公司名称:北京惠买网络科技有限公司    &nbsp;   公司地址:北京市北京经济技术开发区同济南路19号7幢2层C区   服务热线：400-707-0707</p>
+			  <p class="footer-list copyright"> 统一社会信用代码:91110302339739621C  &nbsp;  ICP备案号:京ICP备15039150号-1   &nbsp;  食品流通许可证编号:JY11131010332635 &nbsp;<a href="/ugoshop.html" target="_blank">营业执照</a><a href="http://img.ugoshop.com/images/wangwenzheng.jpg" target="_blank">京网文(2017)10902-1271</a>
+				  <a href="http://img.ugoshop.com/images/ugo_edi.png" target="_blank">增值业务经营许可证：京B2-20181380 </a>
+			  </p>
+				  <div style="margin:0 auto;text-align:center;">
+					  <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010023" style="display:inline-block;text-decoration:none;height:22px;line-height:22px;">
+						  <img src="/themes/ugo/images/2015/2015_public/bei.png" style="float:left;">
+						  <p style="float:left;margin: 0px 0px 0px 5px; color:#555;">京公网安备 11030102010023号</p>
+					  </a>
+				  </div>
+			  </div>
+		  </div>
+		  <!-- 楼梯效果 -->
+		  <!--左侧楼梯-->
+		  <div id="loutinav">
+				<ul>
+					<li class="active"><span>TV直播</span> </li>
+					<li><span>今日必抢</span></li>
+					<li><span>惠买优选</span> </li>
+					<!-- <li><span>电脑数码</span> </li> -->
+					<!-- <li><span>3C运动</span> </li>
+					<li><span>爱吃</span> </li>
+					<li><span>母婴居家</span> </li>
+					<li><span>图书汽车</span> </li>
+					<li><span>虚拟</span> </li>
+					<li><span>还没逛够</span> </li> -->
+					<li class="last">顶部</li>
+				</ul>
+		</div>
+	<script src="../../public.js"></script>
+	<script src="../../jquery.js"></script>
+	<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
+	<script src="js/huimai.js"></script>
+	<script src="js/list.js"></script>
+	<script>
+		$("img").lazyload({
+        //   effect: "fadeIn"
+        effect:"slideDown"
+        });
+	</script>
+</body>
+</html>

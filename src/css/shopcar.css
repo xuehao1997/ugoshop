@@ -1,0 +1,182 @@
+.heart {
+    margin: 0 auto;
+    width: 1000px;
+
+}
+.left {
+    float: left;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+p>em {
+    color: #e4393c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.title {
+    box-sizing: border-box;
+    height: 55px;
+    line-height: 55px;
+    margin: 0 0 0px;
+    padding: 0 10px;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    position: relative;
+
+}
+.title input:nth-child(1){
+    
+}
+.title i:nth-child(2){
+    margin-left: 5px;
+    
+}
+/* 商品 */
+.title i:nth-child(3){
+    margin-left: 30px;
+    
+}
+.title i:nth-child(4){
+    margin-left: 30px;
+    position: absolute;
+    left: 450px;
+}
+.title i:nth-child(5){
+    position: absolute;
+    left: 620px;
+}
+/* 小计 */
+.title i:nth-child(6){
+    position: absolute;
+    left: 710px;
+}
+/* 操作 */
+.title i:nth-child(7){
+    position: absolute;
+    left: 850px;
+}
+
+.content {
+    margin-top: 25px;
+    border: 1px solid gray;
+    border-top: 3px solid gray;
+    padding-top: 20px;
+}
+/* 每一条数据的盒子 */
+.content .goods-items {
+    background: pink;
+    padding: 10px;
+    margin-top: 15px;
+    /* 包含块 */
+    position: relative;
+}
+/* 图片和文字描述的盒子 */
+.goods-items div:nth-child(2){
+    /* 包含块 */
+    position: relative;
+    border: 1px solid rebeccapurple;
+    width: 250px;
+    margin-left: 35px;
+}
+.goods-items>div>img {
+    width: 80px;
+    height: 80px;
+    /* 让右边文字和图片顶端对其 */
+    /* vertical-align: text-top; */
+}
+.goods-items>div>span {
+    border: 1px solid greenyellow;
+    position: absolute;
+    left: 85px;
+    top: 0;
+    display: inline-block;
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+    width: 160px;
+}
+/* describe字段的盒子 */
+.goods-items div:nth-child(3) {
+    margin-left: 35px;
+
+}
+.goods-items>div>em {
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+}
+/* 价格的盒子 */
+.goods-items div:nth-child(4) {
+    margin-left: 35px;
+}
+/* 加减的盒子 */
+.goods-items div:nth-child(5) {
+    margin-left: 35px;
+    position: absolute;
+    left: 580px;
+    top: 10px;
+}
+.goods-items div:nth-child(5)>input {
+    width: 30px;
+    text-align: center;
+    vertical-align: top
+}
+.goods-items div:nth-child(5)>a {
+    border: 1px solid gray;
+    background: #f3f3f3;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+}
+/* 小计的盒子 */
+.goods-items div:nth-child(6) {
+    margin-left: 35px;
+    position: absolute;
+    left: 700px;
+    top: 10px;
+}
+/* 操作的盒子 */
+.goods-items div:nth-child(7) {
+    margin-left: 35px;
+    position: absolute;
+    left: 815px;
+    top: 10px;
+}
+/* 计算总价的盒子 */
+.sum-box {
+    width: 1000px;
+    height: 45px;
+    border:1px #e4393c solid;
+    line-height: 45px;
+    margin-top: 20px;
+    padding: 0 12px;
+    position: relative;
+    box-sizing: border-box;
+}
+#delete-all {
+    position: absolute;
+    left: 80px;
+
+}
+#selected {
+    position: absolute;
+    left: 300px;
+}
+#sum-title {
+    position: absolute;
+    left: 460px;
+
+}
+#sum-price {
+    position: absolute;
+    left: 590px;
+}

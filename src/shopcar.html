@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的订单</title>
+    <link rel="icon" href="../img/goodslogo.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/shopcar.css">
+</head>
+<body>
+    <div class="heart">
+        <p><em>全部商品</em></p>
+        <!-- 标题盒子 -->
+        <div class="heart title">
+            <input type="checkbox" class="all-select"><i>全选</i>
+            <!-- Shift+Alt+down向下复制一行 -->
+            <i>商品</i>
+            <i>单价（元）</i>
+            <i>数量</i>
+            <i>小计（元）</i>
+            <i>操作</i>
+        </div>
+
+        <!-- 存放所有商品条目的盒子 -->
+        <div class="content">
+            <!-- 每一条节点列表 -->
+            <div class="goods-items clearfix" style="display: none">
+
+                <div class="left">
+                        <input type="checkbox" >
+                </div>
+                <!-- 图片url    title字段 -->
+                <div class="left">
+                    <img src="../img/li3.jpg" alt="商品图" id="goods-img">
+                    <span id="title-item">我是商品的标题，是数据库中的title字段</span>
+                </div>
+                <!-- describe字段 -->
+                <div class="left">
+                    <em id="describe-item">我是商品的描述，是数据库中的describe字段</em>
+                </div>
+                <!-- 单价 -->
+                <div class="left">
+                    <b id="unit-price">price</b>
+                </div>
+                <!-- 数量 -->
+                <div class="left">
+                    <a href="javascript:;" id="reduce">-</a><input type="text" id="number"><a href="javascript:;" id="add">+</a>
+                </div>
+                <!-- 小计 -->
+                <div class="left">
+                       <b id="total-prices"></b>
+                </div>
+                <!-- 删除条目 -->
+                <div class="left">
+                        <a href="javascript:;" id="a-del">delete</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 合计 -->
+        <section class="heart sum-box">
+            <input type="checkbox" class="all-select">全选
+            <a href="javascript:;" id="delete-all">删除选中的商品</a>
+            <span id="selected">已选择0件商品</span>
+            <em id="sum-title">总价：(不含运费)</em>
+            <b id="sum-price">￥0</b>
+        </section>
+    </div>
+    <script src="../../jquery.js"></script>
+    <script src="../../public.js"></script>
+    <script src="js/shopcar.js"></script>
+</body>
+</html>

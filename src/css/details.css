@@ -1,0 +1,176 @@
+.max-box {
+    width: 1000px;
+    padding-top: 15px;
+    border-top:1px solid gray;
+    margin: 30px auto 0;
+    /* 包含块 */
+    position: relative;
+    /* height: 500px; */
+}
+.left {
+    float: left;
+}
+.spic {
+    cursor: move;
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+}
+.spic img {
+    display: block;
+    width: 398px;
+    height: 398px;
+}
+/* 右边的标题描述大盒子 */
+#goods-describe {
+    margin-left: 40px;
+    border: 0;
+}
+#goods-describe h1 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 420px;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#goods-describe p {
+    color: #666;
+    margin-bottom: 10px;
+}
+.box-price {
+    /* position: relative; */
+    padding: 10px 10px 15px 10px;
+    margin-bottom: 15px;
+    border: 1px dotted #e8e8e8;
+    background-color: #fafafa;
+}
+#goods-describe b {
+    color: #666;
+}
+#goods-describe span {
+    color: #f70800;
+    font-size: 34px;
+    margin-right: 7px;
+}
+#goods-describe i {
+    padding: 1px 8px;
+    margin-left: 5px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #ff504a;
+    color: #fff;
+    text-align: center;
+}
+#goods-describe em {
+    font-size: 20px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+#goods-describe input {
+    height: 20px;
+    vertical-align: middle;
+}
+#goods-describe button {
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    background: #df3033;
+    font-size: 21px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+
+/* 放大镜功能 */
+.bf {
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    margin-left: 40px;
+    overflow: hidden;
+    /* 包含块 */
+    position: relative;
+}
+.bf img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 800px;
+    height: 800px;
+
+}
+#spic-box {
+    /* 包含块 */
+    position: relative;
+}
+.sf{
+    /* width: 200px;
+    height: 200px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(20, 40, 60, 0.5)
+}
+/* 小列表 */
+#ulist {
+    position: absolute;
+    top:433px;
+    width:400px;
+    height: 60px;
+    overflow: hidden;
+
+}
+#ulist a {
+    float: left;
+    width: 10px;
+    height: 60px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    line-height: 56px;
+    text-align: center;
+    background: #fff;
+}
+#right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#list {
+    float: left;
+    margin-left: 10px;
+    width: 325px;
+    position: relative;
+    /* overflow: hidden; */
+}
+#list ul {
+    position: absolute;
+}
+#list ul li{
+    padding-right: 5px;
+    float: left;
+    cursor: pointer;
+}
+#left {
+    z-index: 2;
+}
+/* 品质盒子 */
+#quality-box {
+    position: relative;
+    top: 125px;
+    width: 1000px;
+    height: 80px;
+    overflow: hidden;
+    border: 1px solid gray;
+    margin: 0 auto;
+    background: url(../../img/declaration03.png) no-repeat 0 0;
+}
+

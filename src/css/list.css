@@ -1,0 +1,61 @@
+article {
+    background: #f2f2f2;
+}
+.goods-list{
+    width: 1020px;
+    margin: 0 auto;
+}
+.goods-list ul {
+
+}
+.goods-list li {
+    border: 1px solid gray;
+    width: 318px;
+    height: 460px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+     /* 包含块 */
+     position: relative;
+}
+.goods-list li a {
+    display: block;
+   
+    /* width: 298px;
+    height: 443px; */
+}
+.goods-list li a p {
+    padding: 0 10px;
+    line-height: 26px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.goods-list li a em {
+    display: block;
+    color: #F70800;
+    font: 12px '微软雅黑';
+    /* padding: 0 10px;
+    line-height: 16px;
+    margin: 5px 0 0; */
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+.goods-list li a span {
+    display: inline-block;
+    font: 26px arial;
+    /* 行内元素设置margin、padding属性无效，但设置padding-right、padding-left有效 */
+    /* margin-top: 20px;
+    padding: 5px; */
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+
+}
+.goods-list li a img {
+    width: 298px;
+    height: 298px;
+}

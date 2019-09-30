@@ -1,0 +1,133 @@
+/* 定义字体 */
+@font-face {
+    /* 字体名称iconfont */
+    font-family: "iconfont";
+    /* 引入 */
+    src: url("../download/iconfont.eot");
+    src: url("../download/iconfont.eot?#iefix") format("embedded-opentype"),
+        url("../download/iconfont.woff2") format("woff2"),
+        url("../download/iconfont.woff") format("woff"),
+        url("../download/iconfont.ttf") format("truetype"),
+        url("../download/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 30px;
+    font-style: normal;
+    color: chocolate;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shizi:before {
+    content: "\e69c";
+}
+
+.icon-qunzi-copy-copy:before {
+    content: "\e626";
+}
+
+.icon-shizi1:before {
+    content: "\e609";
+}
+
+.icon-lachang:before {
+    content: "\e61f";
+}
+
+.icon-wugui:before {
+    content: "\e501";
+}
+
+.icon-qunzi:before {
+    content: "\e643";
+}
+
+.icon-xiangchang:before {
+    content: "\e602";
+}
+
+.icon-wuhuarou:before {
+    content: "\e601";
+}
+
+.icon-mantou:before {
+    content: "\e588";
+}
+
+.icon-xigua:before {
+    content: "\e610";
+}
+
+.icon-chengzi:before {
+    content: "\e620";
+}
+
+.icon-wugui1:before {
+    content: "\e606";
+}
+
+.icon-wugui2:before {
+    content: "\e67a";
+}
+
+.icon-shizi2:before {
+    content: "\e67e";
+}
+
+.icon-yifufill:before {
+    content: "\e502";
+}
+
+.icon-xingxing:before {
+    content: "\e503";
+}
+
+.icon-xiezi:before {
+    content: "\e611";
+}
+
+.icon-xiaoxi:before {
+    content: "\e740";
+}
+
+.icon-dianzan:before {
+    content: "\e756";
+}
+
+.icon-shenghuoyongpin-:before {
+    content: "\e78e";
+}
+
+.icon-shenghuoyongpin-1:before {
+    content: "\e78f";
+}
+
+.icon-xiezi1:before {
+    content: "\e641";
+}
+
+.icon-icon-:before {
+    content: "\e629";
+}
+
+.icon-xiangchang1:before {
+    content: "\e60f";
+}
+
+.icon-beixin:before {
+    content: "\e607";
+}
+
+.icon--:before {
+    content: "\e603";
+}
+
+.icon-taozi-:before {
+    content: "\e605";
+}
+
+.icon-nangua-:before {
+    content: "\e608";
+}
